@@ -6,122 +6,185 @@
 }
 
 /* SECTION -  COMEÇO CABEÇALHO */
-@keyframes rodaroda {
-    0% {
-        transform: rotate(0deg);
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+@media only screen and (max-device-width: 1080px) {
+    @keyframes rodaroda {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        50% {
+            transform: rotate(180deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
     }
 
-    50% {
-        transform: rotate(180deg);
+    body {
+        height: 100%;
+        margin: 0PX;
+        padding: 0PX;
     }
 
-    100% {
-        transform: rotate(360deg);
+    .COMEÇO {
+        text-align: center;
+        align-items: center;
+        width: 100%;
+        background-color: var(--cortittle);
+        height: 120PX;
+        margin: 0px;
+        padding-bottom: 5px;
+        display: inline-block;
+        flex-wrap: wrap;
+        border-bottom: 1px solid black;
     }
+
+
+
+    .Logo {
+        width: 80px;
+        height: 80px;
+        margin: 5PX;
+        text-align: center;
+        align-items: center;
+        position: fixed;
+        display: inline-block;
+
+        box-shadow: white 0px 7px 35px 2px;
+        border-radius: 50px;
+
+
+
+
+
+
+    }
+
+    .ArmadurasStark {
+        margin: 0px;
+        padding-top: 18px;
+        padding-right: 20px;
+        height: 0%;
+        text-align: center;
+        font-size: 17px;
+        font-family: 'Righteous', cursive;
+        color: white;
+        font: weight 10px;
+        text-shadow: rgb(0, 0, 0) 20px 20px 0px 20px;
+        position: relative;
+    }
+
+    
+
+    .Logo:hover {
+
+        animation: rodaroda 3.0s linear infinite;
+    }
+
+    .Logo-site {
+        margin-right: 10px;
+        width: 90%;
+    }
+
+    .menu {
+        text-align: left;
+        margin: 0px;
+        padding: 0px;
+
+    }
+
+    .links {
+        height: 50%;
+        text-align: left;
+        margin: 0px;
+        padding-top: 30px;
+        padding-left: 10px;
+        font-size: 25px;
+        color: #f9f9f9;
+
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        color: rgb(255, 255, 255);
+        text-shadow: white 10px 10px 10px 10px;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #2e2020;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 12px 16px;
+        z-index: 1;
+
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+
+
+
+        transition: 5s;
+    }
+
+    .p {
+        border-bottom: 2px solid rgb(255, 255, 255);
+        padding-top: 5PX;
+        padding-left: 5PX;
+        padding-right: 5PX;
+        padding-bottom: 10PX;
+        margin: 0PX;
+    }
+
+    /* SECTION -  FIM CABEÇALHO */
+
+
+
+
+
+
+    /*Footer -  Inicio rodape */
+    .footer1 {
+        text-align: end;
+        text-align: center;
+        background-color: var(--cortittle);
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        padding: 0PX;
+        margin: 0px;
+        height: 110px;
+    }
+
+    .sobreeempresa {
+        text-decoration: none;
+        border: none;
+        padding: 2px;
+    }
+
+    .rodapecontato {
+        text-decoration: none;
+        list-style: none;
+        padding: 2px;
+    }
+
+
+
+
+
+
+
+
+
+    /*Footer - Fim rodape */
 }
-
-body {
-
-    margin: 0PX;
-
-}
-
-.COMEÇO {
-    text-align: center;
-    align-items: center;
-    width: 100%;
-    background-color: var(--cortittle);
-    height: 90PX;
-    margin: 0px;
-    padding-bottom: 5px;
-    display: inline-block;
-    flex-wrap: wrap;
-    border-bottom: 1px solid black;
-}
-
-
-
-.Logo {
-    width: 80px;
-    height: 80px;
-    margin: 5PX;
-    text-align: center;
-    align-items: center;
-    position: fixed;
-    display: inline-block;
-
-    box-shadow: white 0px 7px 35px 2px;
-    border-radius: 50px;
-
-
-
-
-
-
-}
-
-.Logo:hover {
-
-    animation: rodaroda 3.0s linear infinite;
-}
-
-.Logo-site {
-    margin-right: 10px;
-    width: 90%;
-}
-
-.menu {
-    text-align: left;
-    margin: 0px;
-    padding: 0px;
-
-}
-
-.links {
-    height: 50%;
-    text-align: left;
-    margin: 0px;
-    padding-top: 30px;
-    padding-left: 10px;
-    font-size: 25px;
-    color: #f9f9f9;
-
-
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-    color: rgb(255, 255, 255);
-    text-shadow: white 10px 10px 10px 10px;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #2e2020;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    padding: 12px 16px;
-    z-index: 1;
-
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-
-
-
-    transition: 5s;
-}
-
-p {
-    border-bottom: 2px solid rgb(255, 255, 255);
-    padding-top: 5PX;
-    padding-left: 5PX;
-    padding-right: 5PX;
-    padding-bottom: 10PX;
-    margin: 0PX;
-}
-
-/* SECTION -  FIM CABEÇALHO */
