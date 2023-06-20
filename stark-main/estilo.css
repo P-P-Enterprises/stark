@@ -10,6 +10,9 @@ a{
     text-decoration: none;
     color:white;
 }
+
+  @import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
@@ -42,7 +45,7 @@ a{
         align-items: center;
         width: 100%;
         background-color: var(--cortittle);
-        height: 120PX;
+        height: 110PX;
         margin: 0px;
         padding-bottom: 5px;
         display: inline-block;
@@ -60,7 +63,7 @@ a{
     .Logo {
         width: 80px;
         height: 80px;
-        margin: 5PX;
+        margin: 2PX;
         text-align: center;
         align-items: center;
         box-shadow: white 0px 3px 35px 2px;
@@ -75,7 +78,7 @@ margin-left:363px;
 
     .ArmadurasStark {
         margin: 0px;
-        padding-top: 8px;
+        padding-top: 0px;
         padding-right: 20px;
         height: 0%;
         text-align: center;
@@ -125,8 +128,8 @@ margin-left:363px;
     }
 
     .dropdown {
-        position: relative;
-        display: inline-block;
+       text-align: left;
+       display: inline-block;
         color: rgb(255, 255, 255);
         text-shadow: white 10px 10px 10px 10px;
         font-family: 'Share Tech Mono', monospace;
@@ -185,21 +188,152 @@ font-family: 'Allerta Stencil', sans-serif;
 
     /* SECTION -  FIM CABEÇALHO */
 
+/*MAin - Inicio */
 
+.main{
+    background-image: url(fundo6.png);
+background-size: 990px;
+margin-top: 0px;
+height: 1550px;
+
+width:100%;
+background-repeat: no-repeat;
+
+background-position: fixed;
+display: inline-block;
+flex-direction: column;
+min-height: 100%;
+}
+.bemvindo{
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+   margin: 0px;
+    padding-left: 250px;
+    width: 500px;
+    padding-bottom: 0px;
+    padding-top: 10px;
+    font-size: 22px;
+    text-align: center;
+
+    margin-bottom: 10px;
+
+    margin: 5px;
+    text-shadow: 0px 8px 8.5px  rgba(0, 0, 0, 0.233);
+  
+}
+.bemvindo::first-letter{
+    font-size: 40px;
+    color: red;
+    text-shadow: 0px 8px 8.5px  rgba(255, 0, 0, 0.623);
+
+
+}
+.bemvindo2{
+    font-family: Arial, Helvetica, sans-serif;
+
+  width: 590px;
+  text-align: center;
+  padding-left: 205px;
+  margin-top: 0px;
+  padding-top: 10px;
+  font-size: 22px;
+  text-shadow: 0px 8px 8.5px  rgba(0, 0, 0, 0.247);
+}
+.bemvindo2::first-letter{
+    font-size: 30px;
+    color: red;
+    text-shadow: 0px 8px 8.5px  rgba(255, 0, 0, 0.719);
+
+
+}
+
+.bemvindo3{
+    font-family: Arial, Helvetica, sans-serif;
+
+  width: 570px;
+  text-align: center;
+  padding-left: 225px;
+  margin-top: 0px;
+  padding-top: 0px;
+  font-size: 22px;
+  text-shadow: 0px 8px 8.5px  rgba(0, 0, 0, 0.247);
+}
+.bemvindo3::first-letter{
+    font-size: 30px;
+    color: red;
+    text-shadow: 0px 8px 8.5px  rgba(255, 0, 0, 0.719);
+
+
+}
+.bemvindo4{
+    font-family: Arial, Helvetica, sans-serif;
+
+  width: 300px;
+  text-align: center;
+  padding-left: 325px;
+  margin-top: 20px;
+  padding-top: 10px;
+  font-size: 22px;
+  text-shadow: 0px 8px 8.5px  rgba(0, 0, 0, 0.247);
+}
+.bemvindo4::first-letter{
+    font-size: 30px;
+    color: red;
+    text-shadow: 0px 8px 8.5px  rgba(255, 0, 0, 0.719);
+
+
+}
+
+.slide-controller:nth-child(1):checked ~ .slide-show .slides-list{--selected-item: 0;}
+.slide-controller:nth-child(2):checked ~ .slide-show .slides-list{--selected-item: 1;}
+.slide-controller:nth-child(3):checked ~ .slide-show .slides-list{--selected-item: 2;}
+.slide-controller:nth-child(4):checked ~ .slide-show .slides-list{--selected-item: 3;}
+
+.slide-show{
+  overflow: hidden;
+
+
+}
+.slidecontraleer{
+    text-align: center;
+    align-items: center;
+}
+.slides-list{
+  --selected-item: 0;
+  --total-items: 4;
+  list-style-type: none;
+  margin: 10px 0;
+  padding: 0;
+  position: relative;
+  left: calc(var(--selected-item) * -100%);
+  width: calc(var(--total-items) * 100%);
+  transition: left 0.4s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+  text-align: center;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+}
+.imagens{
+    text-align: center;
+    border-radius: 10px;
+    width: 250px;
+    height: 500px;
+}
+/*Main - Fim */
 
 
 
 
     /*Footer -  Inicio rodape */
     .footer1 {
+    
         text-align: end;
         text-align: center;
         background-color: var(--cortittle);
-        position: absolute;
         bottom: 0px;
         width: 100%;
-        padding: 0PX;
-        margin: 0px;
+        padding: 10PX;
+        margin-top: auto;
         height: 135px;
         color: white;
         font-size: 12PX;
