@@ -4,7 +4,14 @@
     --corfooter: yellow;
     --cortexto: black;
 }
-
+@font-face {
+    font-family: 'Stay Dreaming';
+    src: url('Stay\ Dreaming.otf') format('truetype');
+  }
+  @font-face {
+    font-family: 'REQUEMA';
+    src: url('REQUEMA.otf') format('truetype');
+  }
 /* SECTION -  COMEÇO CABEÇALHO */
 @import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
 
@@ -152,7 +159,7 @@ margin-left:363px;
     }
     .produzido{
         font-size: 11px;
-        font-family: Arial, Helvetica, sans-serif;
+         font-family:'Allerta Stencil', sans-serif;
     
     }
 
@@ -278,7 +285,7 @@ min-height: 100%;
     font-size: 40px;
     color: red;
     text-shadow: 0px 8px 8.5px  rgba(255, 0, 0, 0.623);
-   
+    font-family: 'Stay Dreaming';
 
 
 }
@@ -334,7 +341,7 @@ min-height: 100%;
     font-size: 30px;
     color: red;
     text-shadow: 0px 8px 8.5px  rgba(255, 0, 0, 0.719);
-
+    font-family: 'Stay Dreaming';
 
 }
 .bemvindo4-main{
@@ -353,7 +360,7 @@ margin-bottom: 0px;
     font-size: 30px;
     color: red;
     text-shadow: 0px 8px 8.5px  rgba(255, 0, 0, 0.719);
-
+    font-family: 'Stay Dreaming';
 
 }
 .bemvindo5{
@@ -584,6 +591,20 @@ filter: drop-shadow(0px 1.5px 15px black);
     border-radius: 20px;
 
 }
+.redes-sociais1{
+    width: 85px;
+    height:85px;
+    border-radius: 20px;
+    text-align: center;
+
+
+}
+.redes-sociais1:hover{
+ 
+    transform: skew(-2deg,-2deg);
+
+}
+
 .redes-sociais:hover{
     transform: skew(-5deg,-5deg);
 
